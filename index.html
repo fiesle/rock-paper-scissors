@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <h1 class="logo">Rock, Paper, and Scissors</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="pic-container">
+        <img class="pic-player" alt="" src="images/default.png" />
+        <img class="pic-computer" alt="" src="images/default.png" />
+      </div>
+      <div class="text-container">
+        <span class="text"
+          >Please pick one! Rock, Paper, or Scissors? Best of 5!</span
+        >
+        <span class="result"></span>
+      </div>
+      <div class="pick-container">
+        <button class="rockBtn" onclick="playRound(this);">ROCK</button>
+        <button class="paperBtn" onclick="playRound(this);">PAPER</button>
+        <button class="scissorsBtn" onclick="playRound(this);">SCISSORS</button>
+      </div>
+      <div class="restart-container">
+        <button onclick="restartGame()" class="restartBtn">RESTART</button>
+      </div>
+      <div class="score-container">
+        <p class="score">
+          SCORE: <span class="playerScore">0</span>-<span class="computerScore"
+            >0</span
+          >
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>&lt&gtfiesle&lt/&gt</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
